@@ -4,9 +4,10 @@ require 'nokogiri'
 
 # 無在庫転売をやってるであろうユーザーのノーブランド品の一覧
 def url(page)
-  "https://www.amazon.co.jp/s?i=merchant-items&me=A1KEURF5MEPE9S&rh=p_4%3A%E3%83%8E%E3%83%BC%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%93%81&dc&page=#{page}&marketplaceID=A1VC38T7YXB528&qid=1573654722&ref=sr_pg_#{page}"
+  # store: AD6ZTA9M4ZPE0
+  "https://www.amazon.co.jp/s?i=merchant-items&me=AD6ZTA9M4ZPE0&rh=p_4%3A%E3%83%8E%E3%83%BC%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%93%81&dc&page=#{page}&marketplaceID=A1VC38T7YXB528&qid=1574517427&ref=sr_pg_#{}"
 end
-max_pagenation = 10
+max_pagenation = 300
 amazon_root_url = "https://www.amazon.co.jp"
 
 # User-Agentを偽装しないと、503エラーが出る（アマゾンがなんか判定してるのかも）

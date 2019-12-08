@@ -35,7 +35,6 @@ end
 puts "n = #{n}"
 puts goods_data.length
 
-
 # hoge.txtに、重複データを削除した、新規店舗のデータを追加
 File.open("hoge.txt", "w") do |file|
   goods_data.each do |goods|
